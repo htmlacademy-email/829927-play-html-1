@@ -37,6 +37,16 @@
       }
 
       @media only screen and (max-width:600px) {
+        .adaptive-img {
+          width: 100% !important;
+          height: auto !important;
+        }
+
+        .column {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
         .intro h1 {
           font-size: 28px !important;
           line-height: 33px !important;
@@ -52,27 +62,18 @@
           line-height: 28px !important;
         }
 
-        .adaptive-img {
-          width: 100% !important;
-          height: auto !important;
-        }
-
-        .column {
+        .promo__table {
           width: 100% !important;
           max-width: 100% !important;
         }
 
-        .promo-table {
-          width: 100% !important;
-          max-width: 100% !important;
-        }
-
-        .promo-wrapper {
+        .promo-section__-wrapper {
           padding-left: 15px !important;
           padding-right: 15px !important;
         }
 
-        .promo-image img {
+        .promo-section__image img {
+          max-width: 256px !important;
           height: 234px !important;
         }
 
@@ -81,18 +82,18 @@
         }
 
         .gifts img {
+          max-width: 254px !important;
           height: 286px !important;
         }
 
-        .gifts-img {
+        .gifts__img-wrapper {
           padding-bottom: 0 !important;
         }
 
-        .footer-tel {
+        .footer__tel {
           padding-bottom: 32px !important;
         }
       }
-
     </style>
   </head>
   <body style="width:100%;padding:0;Margin:0;font-family:'trebuchet ms', tahoma, sans-serif;text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;font-weight:400;color: #141414;">
@@ -119,7 +120,9 @@
               <table align="center" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" style="padding:0;Margin:0;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;background-color:#FFFFFF;">
                 <tr>
                   <td align="center" style="Margin:0;padding-top:40px;padding-bottom:17px;font-size:0px;padding-left:15px;padding-right:15px;">
-                    <img src="https://github.com/KarinaKarapetyanWeb/829927-play-html-1/blob/master/1-invitation/img/logo@2x.png?raw=true" alt="логотип" width="140" height="24" border="0"/>
+                    <a href="#" title="логотип">
+                      <img src="https://github.com/KarinaKarapetyanWeb/829927-play-html-1/blob/master/1-invitation/img/logo@2x.png?raw=true" alt="логотип" width="140" height="24" border="0"/>
+                    </a>
                   </td>
                 </tr>
               </table>
@@ -137,9 +140,9 @@
                 </tr>
               </table>
               <!--Промо-->
-              <table align="center" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" style="padding:0;Margin:0;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;background-color:#FFFFFF;font-size:0;">
+              <table class="promo-section" align="center" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" style="padding:0;Margin:0;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;background-color:#FFFFFF;font-size:0;">
                 <tr>
-                    <td class="promo-wrapper" align="center" style="Margin:0;padding:0;font-size:0;padding-bottom:32px;">
+                    <td class="promo-section__wrapper" align="center" style="Margin:0;padding:0;font-size:0;padding-bottom:32px;">
                       <!--Промо (колонка)-->
                       <!--[if mso]>
                           <table border="0" cellspacing="0" cellpadding="0">
@@ -147,7 +150,7 @@
                                   <td width="200" style="vertical-align:top; font-size:0; line-height:0;">
                       <![endif]-->
                       <div class="promo column" align="center" style="display:inline-block;max-width:200px;vertical-align:top;">
-                        <table class="promo-table" width="200" cellspacing="0" cellpadding="0" border="0" align="center" bgColor="#FF4B33" style="padding:0;Margin:0;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:200px;font-size:16px;border-radius:10px;background-color:#FF4B33;color:#ffffff;">
+                        <table class="promo__table" width="200" cellspacing="0" cellpadding="0" border="0" align="center" bgColor="#FF4B33" style="padding:0;Margin:0;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:200px;font-size:16px;border-radius:10px;background-color:#FF4B33;color:#ffffff;">
                           <tr>
                             <td align="center" style="Margin:0;padding:0;padding-top:16px;">
                               <p style="Margin:0;font-family:'trebuchet ms', tahoma, sans-serif;text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;font-size:36px;line-height:42px;"><b>июнь</b></p>
@@ -175,11 +178,13 @@
                                   </td>
                                   <td width="352" style="vertical-align:top; font-size:0; line-height:0;">
                       <![endif]-->
-                      <div class="promo-image column" align="center" style="display:inline-block; max-width:352px; vertical-align:top;">
+                      <div class="promo-section__image column" align="center" style="display:inline-block; max-width:352px; vertical-align:top;">
                         <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgColor="#FFFFFF" style="padding:0;Margin:0;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;background-color:#FFFFFF">
                           <tr>
-                            <td>
-                              <img class="adaptive-img" src="https://github.com/KarinaKarapetyanWeb/829927-play-html-1/blob/master/1-invitation/img/webinar@2x.png?raw=true" alt="Вебинар" width="352" height="286" border="0"/>
+                            <td align="center" style="Margin:0;padding:0;">
+                              <a href="#" title="вебинар">
+                                <img class="adaptive-img" src="https://github.com/KarinaKarapetyanWeb/829927-play-html-1/blob/master/1-invitation/img/webinar@2x.png?raw=true" alt="Вебинар" width="352" height="286" border="0"/>
+                              </a>
                             </td>
                           </tr>
                         </table>
@@ -206,19 +211,25 @@
                 </tr>
                 <tr>
                   <td style="Margin:0;padding:0;padding-bottom:8px;padding-left:15px;padding-right:15px;">
-                    <img src="https://github.com/KarinaKarapetyanWeb/829927-play-html-1/blob/master/1-invitation/img/icon-1.png?raw=true" alt="Иконка" border="0" height="12" width="12"/>
+                    <a href="#" title="иконка">
+                      <img src="https://github.com/KarinaKarapetyanWeb/829927-play-html-1/blob/master/1-invitation/img/icon-1.png?raw=true" alt="Иконка" border="0" height="12" width="12"/>
+                    </a>
                     <span style="padding-left:12px;Margin:0;font-family:'trebuchet ms', tahoma, sans-serif;text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;font-size:18px;line-height:21px;">Кто такой frontend-разработчик?</span>
                   </td>
                 </tr>
                 <tr>
                   <td style="Margin:0;padding:0;padding-bottom:8px;padding-left:15px;padding-right:15px;">
-                    <img src="https://github.com/KarinaKarapetyanWeb/829927-play-html-1/blob/master/1-invitation/img/icon-2.png?raw=true" alt="Иконка" border="0" height="12" width="12"/>
+                    <a href="#" title="иконка">
+                      <img src="https://github.com/KarinaKarapetyanWeb/829927-play-html-1/blob/master/1-invitation/img/icon-2.png?raw=true" alt="Иконка" border="0" height="12" width="12"/>
+                    </a>
                     <span style="padding-left:12px;Margin:0;font-family:'trebuchet ms', tahoma, sans-serif;text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;font-size:18px;line-height:21px;">Какие навыки сейчас востребованы?</span>
                   </td>
                 </tr>
                 <tr>
                   <td style="Margin:0;padding:0;padding-bottom:40px;padding-left:15px;padding-right:15px;">
-                    <img src="https://github.com/KarinaKarapetyanWeb/829927-play-html-1/blob/master/1-invitation/img/icon-3.png?raw=true" alt="Иконка" border="0" height="12" width="12"/>
+                    <a href="#" title="иконка">
+                      <img src="https://github.com/KarinaKarapetyanWeb/829927-play-html-1/blob/master/1-invitation/img/icon-3.png?raw=true" alt="Иконка" border="0" height="12" width="12"/>
+                    </a>
                     <span style="padding-left:12px;Margin:0;font-family:'trebuchet ms', tahoma, sans-serif;text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;font-size:18px;line-height:21px;">Как устроиться в&nbsp;компанию после обучения?</span>
                   </td>
                 </tr>
@@ -232,7 +243,9 @@
                 </tr>
                 <tr>
                   <td align="center" style="Margin:0;padding:0;padding-left:15px;padding-right:15px;font-size:0;padding-bottom:12px;font-size:0;">
-                    <img src="https://github.com/KarinaKarapetyanWeb/829927-play-html-1/blob/master/1-invitation/img/man@2x.png?raw=true" alt="Ведущий вебинара" width="88" height="88" border="0"/>
+                    <a href="#" title="ведущий">
+                      <img src="https://github.com/KarinaKarapetyanWeb/829927-play-html-1/blob/master/1-invitation/img/man@2x.png?raw=true" alt="Ведущий вебинара" width="88" height="88" border="0"/>
+                    </a>
                   </td>
                 </tr>
                 <tr>
@@ -254,8 +267,10 @@
               <!--Призы-->
               <table class="gifts" align="center" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" style="padding:0;Margin:0;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;background-color:#FFFFFF;">
                 <tr>
-                  <td class="gifts-img" align="center" style="Margin:0;padding:0;padding-left:15px;padding-right:15px;padding-bottom:16px;font-size:0;">
-                    <img class="adaptive-img" src="https://github.com/KarinaKarapetyanWeb/829927-play-html-1/blob/master/1-invitation/img/webinar-2@2x.png?raw=true" alt="Вебинар" width="278" height="278" border="0"/>
+                  <td class="gifts__img-wrapper" align="center" style="Margin:0;padding:0;padding-left:15px;padding-right:15px;padding-bottom:16px;font-size:0;">
+                    <a href="#" title="призы">
+                      <img class="adaptive-img" src="https://github.com/KarinaKarapetyanWeb/829927-play-html-1/blob/master/1-invitation/img/webinar-2@2x.png?raw=true" alt="Вебинар" width="278" height="278" border="0"/>
+                    </a>
                   </td>
                 </tr>
                 <tr>
@@ -275,7 +290,7 @@
                 </tr>
               </table>
               <!--Подвал-->
-              <table align="center" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" style="padding:0;Margin:0;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;background-color:#FFFFFF;font-size:0;">
+              <table class="footer" align="center" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" style="padding:0;Margin:0;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;background-color:#FFFFFF;font-size:0;">
                 <tr>
                   <td style="Margin:0;padding:0;padding-bottom:26px;">
                     <!--Подвал (колонка)-->
@@ -284,7 +299,8 @@
                             <tr>
                                 <td width="280" style="Margin:0;padding:0;padding-left:15px;padding-right:15px;vertical-align:top;font-size:0;line-height:0;">
                     <![endif]-->
-                    <div align="center" style="box-sizing:border-box;display:inline-block; max-width:280px;vertical-align:top;padding-left:15px;padding-right:15px;">
+                    <div align="center" style="box-sizing:border-box;display:inline-block;
+                    min-width:50%;max-width:280px;vertical-align:top;padding-left:15px;padding-right:15px;">
                       <table class="column" width="280px" cellspacing="0" cellpadding="0" border="0" align="center" style="padding:0;Margin:0;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:280px;">
                         <tr>
                           <td style="Margin:0;padding:0;padding-bottom:18px;font-size:16px;line-height:19px;">
@@ -335,7 +351,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="footer-tel" style="Margin:0;padding:0;font-size:14px;line-height:16px;">
+                          <td class="footer__tel" style="Margin:0;padding:0;font-size:14px;line-height:16px;">
                             <a style="Margin:0;font-family:'trebuchet ms', tahoma, sans-serif;text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;font-size:14px;line-height:16px;color:#13D6C3;text-decoration:none;" href="tel:+78006907668" target="_blank" title="телефон">8-800-690-76-68</a>
                           </td>
                         </tr>
@@ -346,7 +362,7 @@
                               <td width="280" style="Margin:0;padding:0;padding-left:15px;padding-right:15px;vertical-align:top;font-size:0;line-height:0;">
                     <![endif]-->
                     <!--Подвал (колонка)-->
-                    <div align="center" style="box-sizing:border-box;display:inline-block;max-width:280px;vertical-align:top;padding-left:15px;padding-right:15px;">
+                    <div align="center" style="box-sizing:border-box;display:inline-block;min-width:50%;max-width:280px;vertical-align:top;padding-left:15px;padding-right:15px;">
                       <table class="column" width="280px" cellspacing="0" cellpadding="0" border="0" align="center" style="padding:0;Margin:0;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:280px;">
                         <tr>
                           <td style="Margin:0;padding:0;padding-bottom:18px;font-size:16px;line-height:19px;">
